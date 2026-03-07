@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hot Topics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Hot Disease Topics</div>
+    <a href="index.html" class="back-btn">← Back</a>
+</nav>
+
+<section class="hot-section">
+    <h1>Future Disease Outbreak Predictions</h1>
+    <ul>
+        <li>Climate Change Driven Viral Mutations</li>
+        <li>Drug Resistant Superbugs</li>
+        <li>Future Zoonotic Pandemics</li>
+        <li>Biotech Misuse Risks</li>
+    </ul>
+</section>
+
+<section class="hot-section">
+    <h1>Diseases With No Complete Cure</h1>
+    <ul>
+        <li>Alzheimer’s</li>
+        <li>HIV</li>
+        <li>ALS</li>
+        <li>Advanced Cancers</li>
+    </ul>
+</section>
+
+<!-- FLOATING AI CHATBOT -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            <span>AI Health Assistant</span>
+            <button onclick="toggleChatbot()">✖</button>
+        </div>
+
+        <iframe 
+            src="https://agent.jotform.com/0195d0b6f8317716a7982f8197b08dfe7e22"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
