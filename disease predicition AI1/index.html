@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Health Watch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Future Health Watch</div>
+
+    <div class="menu">
+        <div class="dots" onclick="toggleMenu()">⋮</div>
+        <div class="dropdown" id="dropdown">
+            <a href="hot.html">Hot Topics</a>
+            <a href="#">News</a>
+            <a href="#">Future Outbreaks</a>
+            <a href="#">Diseases With No Cure</a>
+            <a href="#">World Chat</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Protect Tomorrow’s Health</h1>
+    <p>Stay informed about dangerous diseases and future outbreaks.</p>
+    <button class="main-btn">Explore Topics</button>
+</section>
+
+<section class="topics">
+    <div class="card">
+        <h2>Cancer</h2>
+        <p>Uncontrolled cell growth. Early detection saves lives.</p>
+    </div>
+
+    <div class="card">
+        <h2>Heart Disease</h2>
+        <p>Leading global killer caused by lifestyle and stress.</p>
+    </div>
+
+    <div class="card">
+        <h2>Diabetes</h2>
+        <p>Chronic condition affecting blood sugar regulation.</p>
+    </div>
+
+    <div class="card">
+        <h2>Alzheimer’s</h2>
+        <p>Degenerative brain disorder affecting memory.</p>
+    </div>
+</section>
+
+<!-- FLOATING AI CHATBOT -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            <span>AI Health Assistant</span>
+            <button onclick="toggleChatbot()">✖</button>
+        </div>
+
+        <iframe 
+            src="https://agent.jotform.com/0195d0b6f8317716a7982f8197b08dfe7e22"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
